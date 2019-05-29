@@ -1,6 +1,10 @@
+body{
+    background-color: white;
+    overflow-x: hidden;
+}
 #navBar{
  background-color: #444;
- width: 100%;
+ width: 100vw;
  height: 100px;
  position: fixed;
  z-index: 1;
@@ -14,10 +18,11 @@
     display: block;
 }
 #navBar a{
-    color: #555;
+    color: #858585;
     text-decoration: none;
     float: left;
-    padding: 30px;
+    padding-left: 170px;
+    font-size: 1.1em;
 }
 #navBar img{
  width: 200px;
@@ -26,39 +31,58 @@
 }
 #mainBody{
  background-color: white;
+  border: 1px red solid;
 }
 #heroImage{
     width: 960px;
     height: 450px;
     background-color: black;
- 
+    justify-content: center;
+    margin: 130px 100px 25px 200px;
+    border: 1px red solid;
 }
 #banners{
     display: inline-block;
+    border: 1px solid red;
+    width: 1080px;
+    margin: 0px 175px;
 }
 #banners img{
  width: 300px;
  height: 375px;
  background-color: black;
+ margin-left: 25px;
 }
 #subBody{
-
+ display: inline-block;
+ width: 1080px;
+ margin: 20px 200px;
 }
 #subBody img{
  width: 480px;
  height: 400px;
- float: left;
  background-color: black;
+ float: left;
+ margin-right: 20px;
 }
-#subBody img::after{
-    content: '';
-    clear: both;
-    display: block;
+#subBody h2{
+    padding: 10px;
+    font-size: 1.5em;
+}
+#subBody p{
+    height: 300px;
+    overflow: hidden;
 }
 #subBody button{
     background-color: black;
+    height: 30px;
+    width: 130px;
+    color: white;
+    margin-top: 10px;
 }
 footer{
  height: 10%;
  background-color: #444;
+ width: 100vw;
+ margin: 0;
 }
